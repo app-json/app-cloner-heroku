@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/app-json/app-cloner-heroku"
   },
   "keywords": [
-    "",
-    "",
-    ""
+    "app.json",
+    "heroku",
+    "deploy"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/app-json/app-cloner-heroku/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/app-json/app-cloner-heroku",
   "devDependencies": {
     "mocha": "^1.20.0"
   },
