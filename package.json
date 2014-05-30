@@ -1,5 +1,5 @@
 {
-  "name": "heroku-app-cloner",
+  "name": "app-cloner-heroku",
   "version": "0.0.0",
   "description": "Deploy app.json apps to Heroku",
   "main": "index.js",
