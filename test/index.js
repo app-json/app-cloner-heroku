@@ -47,13 +47,10 @@ describe("Cloner", function() {
       )
     })
 
-    it("throws an error if token is not specified", function(){
-      assert.throws(
-        function(){
-          delete(options.token)
-          new Cloner(options)
-        }
-      )
+    it("derives token from env or netrc if not specified", function(){
+      delete(options.token)
+      cloner = new Cloner(options)
+      assert(cloner.token)
     })
 
   })
@@ -71,18 +68,6 @@ describe("Cloner", function() {
 
       cloner.start()
     })
-
-    // it("start", function(done){
-    //   cloner.on("error", function(error){
-    //     console.error(error)
-    //   })
-    //
-    //   cloner.on("start", function(){
-    //     done()
-    //   })
-    //
-    //   cloner.start()
-    // })
 
   })
 

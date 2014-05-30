@@ -1,4 +1,4 @@
-"use strict"
+  "use strict"
 
 var fs = require("fs")
 var url = require("url")
@@ -9,6 +9,7 @@ var superagent = require("superagent")
 var flatten = require("flatten")
 var redact = require("redact-url")
 var ini = require("ini")
+var auth = require("heroku-auth-finder")
 var Heroku = require("heroku-client")
 
 var Cloner = module.exports = (function() {
@@ -27,6 +28,9 @@ var Cloner = module.exports = (function() {
 
     if (!isURL(this.repo))
       throw new Error("repo must be a URL")
+
+    if (!this.token)
+      this.token = auth()
 
     if (!this.token)
       throw new Error("token is required")
@@ -93,8 +97,8 @@ var Cloner = module.exports = (function() {
 
   }
 
-  Cloner.new = function() {
-    return new Cloner()
+  Cloner.new = function(options) {
+    return new Cloner(options)
   }
 
   return Cloner

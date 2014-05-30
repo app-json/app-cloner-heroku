@@ -1,6 +1,6 @@
 {
   "name": "app-cloner-heroku",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Deploy app.json apps to Heroku",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "dotenv": "^0.2.8",
     "flatten": "0.0.1",
     "github-url-to-object": "^0.5.3",
+    "heroku-auth-finder": "0.0.0",
     "heroku-client": "^1.4.0",
     "ini": "^1.2.1",
     "is-url": "^1.1.0",
