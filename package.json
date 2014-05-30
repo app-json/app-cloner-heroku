@@ -1,7 +1,7 @@
 {
   "name": "heroku-app-cloner",
   "version": "0.0.0",
-  "description": "",
+  "description": "Deploy app.json apps to Heroku",
   "main": "index.js",
   "scripts": {
     "start": "mocha",
