@@ -23,7 +23,7 @@ describe("Cloner", function() {
     })
 
     it("turns repo into a tarball URL", function() {
-      assert.equal(cloner.repo, "https://api.github.com/repos/zeke/slideshow/tarball")
+      assert.equal(cloner.repo, "https://api.github.com/repos/zeke/slideshow/tarball/master")
     })
 
     it("has a token", function() {

@@ -19,3 +19,5 @@ cloner.on("succeeded", function(build){
 cloner.on("error", function(error){
   console.error(error)
 })
+
+cloner.start()

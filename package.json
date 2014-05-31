@@ -1,6 +1,6 @@
 {
   "name": "app-cloner-heroku",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A node module for deploying app.json apps to Heroku. Designed to work on the server, the browser, and the command line.",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "dependencies": {
     "dotenv": "^0.2.8",
     "flatten": "0.0.1",
-    "github-url-to-object": "^0.5.3",
+    "github-url-to-object": "^0.7.0",
     "heroku-auth-finder": "0.0.0",
     "heroku-client": "^1.4.0",
     "ini": "^1.2.1",

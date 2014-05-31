@@ -54,7 +54,7 @@ var Cloner = module.exports = (function() {
     this.emit("error", err)
   }
 
-  Cloner.prototype.start = function(repo_url, app_name) {
+  Cloner.prototype.start = function() {
     var _this = this
     var pollInterval
     var build

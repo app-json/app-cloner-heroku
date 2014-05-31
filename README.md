@@ -35,6 +35,8 @@ cloner.on("error", function(error){
   console.error(error)
 })
 
+cloner.start()
+
 ```
 
 ## Tests
